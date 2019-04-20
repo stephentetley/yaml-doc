@@ -33,3 +33,8 @@ module Yaml =
     let typename (name:string) : Yaml = 
         text "!!" ^^ text name
 
+    let yamlInt (value:int) : Yaml = 
+        intDoc value
+
+    let yamlDouble (value:double) : Yaml = 
+        doubleDoc value

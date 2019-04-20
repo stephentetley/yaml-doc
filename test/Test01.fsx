@@ -9,7 +9,9 @@
 
 #load "..\src\YamlDoc\Internal\Common.fs"
 #load "..\src\YamlDoc\Yaml.fs"
+#load "..\src\YamlDoc\YamlWriter.fs"
 open YamlDoc
+open YamlDoc.YamlWriter
 
 let demo01 () = 
     comment "hello world" |> render
